@@ -35,7 +35,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- 导入swagger相关包-->
+		<!-- 导入swagger相关包 开始-->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
@@ -58,6 +58,7 @@
 			<artifactId>swagger-models</artifactId>
 			<version>1.5.22</version>
 		</dependency>
+		<!-- 导入swagger相关包 结束-->
 	</dependencies>
 
 	<build>

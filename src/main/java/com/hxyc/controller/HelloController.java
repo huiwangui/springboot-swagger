@@ -39,12 +39,13 @@ public class HelloController {
      */
     //@GetMapping
     @RequestMapping( method = RequestMethod.GET,value = "/getHello")
-    @ApiOperation("获取hello信息")
+    //value方法的简要描述，notes方法的详细描述
+    @ApiOperation(value = "获取hello信息",notes ="根据参数获取hello信息" )
     @GetMapping
     @ApiImplicitParams({
             @ApiImplicitParam(name="str",value="查询信息",defaultValue="张三",example="张三")
     })
-    public String getHello(String str){
+    public String getHello(@RequestParam(required=false) String str){
         return str;
     }
 }

@@ -34,7 +34,7 @@ import java.util.ArrayList;
  * @Date 2019/12/23 17:40
  **/
 
-@ComponentScan("com.hxyc.controller")
+//@ComponentScan("com.hxyc.controller")
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
